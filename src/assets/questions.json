@@ -1,0 +1,46 @@
+[
+  {
+    "label": "Please select which Seat",
+    "choices": [
+      {
+        "value": "front Seat",
+        "image": "assets/images/front-seat.png"
+      },
+      {
+        "value": "Rear Seat",
+        "image": "assets/images/rear-seat.png"
+      }
+    ]
+  },
+  {
+    "label": "Which Norme should you respect ?",
+    "choices": [
+      {
+        "value": "ECE17"
+      },
+      {
+        "value": "ECE14"
+      },
+      {
+        "value": "ECE21"
+      }
+    ]
+  },
+  {
+    "label": "Which type of Head Rest ?",
+    "choices": [
+      {
+        "value": "Adjustable Head Rest",
+        "image": "assets/images/A-HD.png"
+      },
+      {
+        "value": "Not Adjustable Head Rest",
+        "image": "assets/images/I-HD.png"
+      },
+      {
+        "value": "Integrated Head Rest",
+        "image": "assets/images/N-HD.png"
+      }
+    ]
+  }
+]

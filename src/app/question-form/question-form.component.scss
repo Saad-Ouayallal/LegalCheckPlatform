@@ -1,0 +1,44 @@
+.question-form-container {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+mat-card-content {
+    font-size: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-around;
+}
+
+.value-text{
+  color: antiquewhite;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.label-text{
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 2rem;
+}
+.choice-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+
+input {
+  margin-right: 10px;
+}

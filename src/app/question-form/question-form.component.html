@@ -1,0 +1,27 @@
+<div class="quiz" *ngIf="question">
+
+  <h1 class="md-display-1 label-text" >{{question.label}}</h1>
+  <mat-card class="question-form-container">
+    <mat-card-content>
+      <form [formGroup]="form">
+        <div class="form-group">
+          <label *ngFor="let choice of question.choices">
+            <li>
+              <span class="choice-container">
+                <input type="radio" [value]="choice" formControlName="choice">
+                <span class="value-text">{{choice.value}}</span>
+                <img *ngIf="choice.image" mat-card-lg-image src={{choice.image}} alt="">
+              </span>
+
+            </li>
+
+          </label>
+        </div>
+      </form>
+
+    </mat-card-content>
+
+
+  </mat-card>
+
+</div>
