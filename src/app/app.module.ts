@@ -11,15 +11,22 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AppComponent } from './app.component';
 import { CardSelectionComponent } from './card-selection/card-selection.component';
 import { QuestionFormComponent } from './question-form/question-form.component';
-
+import { InputFormComponent } from './input-form/input-form.component';
+import { CommonModule } from '@angular/common';
 
 
 const appRoutes: Routes = [
-  { path: ':quizId', component: CardSelectionComponent },
+  { path: '', component: CardSelectionComponent },
 ];
 @NgModule({
-  declarations: [AppComponent, CardSelectionComponent, QuestionFormComponent],
+  declarations: [
+    AppComponent,
+    CardSelectionComponent,
+    QuestionFormComponent,
+    InputFormComponent,
+  ],
   imports: [
+    CommonModule,
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,

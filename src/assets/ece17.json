@@ -1,0 +1,65 @@
+{
+  "types": [
+    {
+      "name": "AdjustableHeadRest",
+      "values": [
+
+    {
+      "name":"EFFECTIVE HEIGHT OF HEAD RESTRAINT IN HIGHEST POSITION",
+      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE EFFECTIVE TOP OF THE HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 0,
+        "max": 830
+      }
+    },
+
+    {
+      "name":"EFFECTIVE HEIGHT OF HEAD RESTRAINT IN LOWEST POSITION",
+      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE EFFECTIVE TOP OF THE HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 0,
+        "max": 720
+      }
+    },
+    {
+      "name":"HEIGHT OF HEAD RESTRAINT IN HIGHEST POSITION",
+      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE TOP OF HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 0,
+        "max": 800
+      }
+    },
+    {
+      "name":"HEIGHT OF HEAD RESTRAINT IN LOWEST POSITION",
+      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE TOP OF HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 0,
+        "max": 750
+      }
+    },
+    {
+      "name":"CLEARANCE OF HEAD RESTRAINT TO VEHICLE INTERIOR",
+      "description":" ALTERNATIVELY, MEASURE THE MINIMUM DISTANCE BETWEEN HEAD RESTRAINT IN THE HIGHEST POSITION TO VEHICLE INTERIOR OR ROOFLINE",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 50
+      }
+    }
+    ]
+    }
+  ]
+}
