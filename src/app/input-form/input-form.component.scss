@@ -69,7 +69,7 @@
 .choice-container{
   display: flex;
       align-items: center;
-  gap: 5rem;
+  gap: 4rem;
   margin-bottom: 2rem;
     box-shadow: rgb(35 34 34) 0px 8px 24px;
     justify-content: space-between;
@@ -94,6 +94,7 @@ li {
     list-style: none;
 }
 
-.imagesDesign {
-  aspect-ratio: 16/9;
+.imageDesign {
+  object-fit: cover;
+    width: 400px;
 }
