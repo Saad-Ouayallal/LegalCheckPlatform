@@ -6,57 +6,104 @@
 
     {
       "name":"EFFECTIVE HEIGHT OF HEAD RESTRAINT IN HIGHEST POSITION",
-      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE EFFECTIVE TOP OF THE HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "description":"assets/ece17images/question1.png",
       "value":"",
       "type":"number",
       "validators" :{
         "required": true,
-        "min": 0,
-        "max": 830
+        "min": 830
       }
     },
 
     {
       "name":"EFFECTIVE HEIGHT OF HEAD RESTRAINT IN LOWEST POSITION",
-      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE EFFECTIVE TOP OF THE HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "description":"assets/ece17images/question2.png",
       "value":"",
       "type":"number",
       "validators" :{
         "required": true,
-        "min": 0,
-        "max": 720
-      }
+        "min": 720      }
     },
     {
       "name":"HEIGHT OF HEAD RESTRAINT IN HIGHEST POSITION",
-      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE TOP OF HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "description":"assets/ece17images/question3.png",
       "value":"",
       "type":"number",
       "validators" :{
         "required": true,
-        "min": 0,
-        "max": 800
+        "min": 800
       }
     },
     {
       "name":"HEIGHT OF HEAD RESTRAINT IN LOWEST POSITION",
-      "description":"MEASURE THE HEAD RESTRAINT HEIGHT FROM R-POINT TO THE TOP OF HEAD RESTRAINT ALONG THE TORSO LINE IN THE HIGHEST AND LOWEST POSITION OF HEAD RESTRAINT",
+      "description":"assets/ece17images/question4.png",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 750      }
+    },
+    {
+      "name":"CLEARANCE OF HEAD RESTRAINT TO VEHICLE INTERIOR",
+      "description":"assets/ece17images/question5.png",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "max": 50
+      }
+    },
+    {
+      "name":"MINIMUM WIDTH OF HEAD RESTRAINT",
+      "description":"assets/ece17images/question6.png",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 85
+      }
+    },
+    {
+      "name":"GAPS WITHIN HEAD RESTRAINT (SPHERE MEASUREMENT)",
+      "description":"assets/ece17images/question7.png",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "max": 60,
+        "min": 0
+      }
+    },
+    {
+      "name":"GAPS BETWEEN HEAD RESTRAINT AND SEAT BACK (LOWEST POSITION) SPHERE MEASUREMENT: 165 MM HEMISPHERE IS POSITIONED INTO THE GAP AREA. DETERMINE THE GAP DIMENSION BY MEASURING THE DISTANCE OF TWO FURTHEST CONTACT POINTS.",
+      "description":"assets/ece17images/question8.png",
       "value":"",
       "type":"number",
       "validators" :{
         "required": true,
         "min": 0,
-        "max": 750
+        "max": 60
       }
     },
     {
-      "name":"CLEARANCE OF HEAD RESTRAINT TO VEHICLE INTERIOR",
-      "description":" ALTERNATIVELY, MEASURE THE MINIMUM DISTANCE BETWEEN HEAD RESTRAINT IN THE HIGHEST POSITION TO VEHICLE INTERIOR OR ROOFLINE",
+      "name":"BACKSET (MEANS THE HORIZONTAL DISTANCE BETWEEN THE FRONT SURFACE OF THE HEAD RESTRAINT AND THE REARMOST POINT OF THE HEAD)",
+      "description":"assets/ece17images/question9.png",
       "value":"",
       "type":"number",
       "validators" :{
         "required": true,
-        "min": 50
+        "max": 45,
+        "min": 0
+      }
+    },
+    {
+      "name":"HEIGHT OF FRONT CONTACT SURFACE OF HEAD RESTRAINT",
+      "description":"assets/ece17images/question10.png",
+      "value":"",
+      "type":"number",
+      "validators" :{
+        "required": true,
+        "min": 100
       }
     }
     ]

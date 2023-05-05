@@ -8,8 +8,8 @@
           <label *ngFor="let control of type.values">
             <li>
               <span class="choice-container">
-                <label class="name">{{ control.name }}</label>
-                <label class="description">{{ control.description }}</label>
+                <label class="name">{{ control.name }}</label>ù
+                <img src="{{control.description}}" alt="" class="imageDesign">
                 <div>
                   <input [type]="control.type" [formControlName]="control.name" [value]="control.value" required>
                   <div *ngIf="myForm.controls[control.name].hasError('max')" class="alert alert-danger">
@@ -20,7 +20,6 @@
                   </div>
                 </div>
               </span>
-
             </li>
           </label>
           <button mat-raised-button class="btn btn-success" color="primary" type="submit">Submit</button>

@@ -25,6 +25,7 @@ export interface JsonFormData {
   types: JsonFormTypes[];
 }
 
+
 @Component({
   selector: 'app-input-form',
   templateUrl: './input-form.component.html',
@@ -65,7 +66,7 @@ export class InputFormComponent implements OnChanges {
               break;
           }
         }
-  
+
         this.myForm.addControl(
           control.name,
           this.fb.control(control.value, validatorsToAdd)
@@ -75,6 +76,11 @@ export class InputFormComponent implements OnChanges {
   }
 
   onSubmit() {
+    if (this.myForm.valid) {
+      alert('This form is valid for the inputs you have entered')
+    } else {
+      alert('This Form is not valid, please check once again the measurments')
+    }
     console.log('Form valid: ', this.myForm.valid);
     console.log('Form values: ', this.myForm.value);
   }
