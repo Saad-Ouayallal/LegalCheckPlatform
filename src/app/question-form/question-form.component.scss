@@ -1,5 +1,5 @@
 .question-form-container {
-    max-width: 800px;
+    max-width: fit-content;
     margin: 10px auto;
 }
 
@@ -14,7 +14,7 @@ li {
 .form-group{
     display: flex;
     justify-content: space-around;
-    gap: 10rem;
+    gap: 4rem;
 }
 
 .value-text{

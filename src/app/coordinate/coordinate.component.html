@@ -1,0 +1,45 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="cont">
+  <div class="align">
+    <label for="anchorPointX">Anchor Point X:</label>
+    <input type="number" id="anchorPointX" formControlName="anchorPointX" required>
+  </div>
+  <div class="align">
+    <label for="anchorPointY">Anchor Point Y:</label>
+    <input type="number" id="anchorPointY" formControlName="anchorPointY" required>
+  </div>
+  <div class="align">
+    <label for="anchorPointZ">Anchor Point Z:</label>
+    <input type="number" id="anchorPointZ" formControlName="anchorPointZ" required>
+  </div>
+  <div class="align">
+    <label for="hPointX">H Point X:</label>
+    <input type="number" id="hPointX" formControlName="hPointX" required>
+  </div>
+  <div class="align">
+    <label for="hPointY">H Point Y:</label>
+    <input type="number" id="hPointY" formControlName="hPointY" required>
+  </div>
+  <div class="align">
+    <label for="hPointZ">H Point Z:</label>
+    <input type="number" id="hPointZ" formControlName="hPointZ" required>
+  </div>
+  <button mat-raised-button class="btn btn-success" color="primary" type="submit">Calculate Difference</button>
+</form>
+
+<div *ngIf="result" class="align-new">
+  <p>The New coordinates of Anchor Point Are :</p>
+  <ul>
+    <li>X: {{ result.x }}</li>
+    <li>Y: {{ result.y }}</li>
+    <li>Z: {{ result.z }}</li>
+  </ul>
+  <p>And the value of Alpha is</p>
+  <ul>
+    <li>Alpha: {{ alpha }}</li>
+  </ul>
+  <p>The Validaty of Alpha</p>
+  <ul>
+    <li>{{ alphaValidity }}</li>
+  </ul>
+  <p [class.SUCCES]="designValid" [class.FAIL]="designNonValid">{{display}}</p>
+</div>

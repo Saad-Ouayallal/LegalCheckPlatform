@@ -4,7 +4,7 @@
       "name": "AdjustableHeadRest",
       "values": [
     {
-      "name":"EFFECTIVE HEIGHT OF HEAD RESTRAINT IN HIGHEST POSITION",
+      "name":"Enter the coordinates of Anchor Point",
       "description":"assets/ece17images/question1.png",
       "value":"",
       "type":"number",

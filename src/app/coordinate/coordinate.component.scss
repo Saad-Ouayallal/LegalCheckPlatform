@@ -1,0 +1,36 @@
+.align {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 6rem;
+    padding: 0.5rem 0;
+}
+.align-new {
+        display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+
+
+}
+
+
+
+.cont{
+      display: flex;
+    padding: 3rem 4rem;
+    flex-direction: column;
+    color: white;
+}
+
+.SUCCES{
+      color: green;
+      font-size: large;
+    }
+
+.FAIL{
+      color: red;
+            font-size: large;
+
+    }

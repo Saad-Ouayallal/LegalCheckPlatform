@@ -8,7 +8,7 @@
           <label *ngFor="let control of type.values">
             <li>
               <span class="choice-container">
-                <label class="name">{{ control.name }}</label>ù
+                <label class="name">{{ control.name }}</label>
                 <img src="{{control.description}}" alt="" class="imageDesign">
                 <div>
                   <input [type]="control.type" [formControlName]="control.name" [value]="control.value" required>

@@ -6,7 +6,7 @@
     <div *ngIf="!showResults" class="questions">
       <app-question-form [question]="questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
       </app-question-form>
-      <mat-card-actions class="button-parent">
+      <mat-card-actions class="button-parent" *ngIf="!showCoordinate">
         <button mat-raised-button class="btn btn-success" color="primary" (click)="nextOrViewResults()"
           [disabled]="!answers.values[currentQuestionIndex]">
           {{currentQuestionIndex === questions.length -1 ? 'Enter the measurments' : 'Next'}}
@@ -15,6 +15,6 @@
 
     </div>
   </div>
-<app-input-form *ngIf="showResults" [jsonFormData]="formData" [answers]="answers"></app-input-form>
-
+<app-input-form *ngIf="showResults " [jsonFormData]="formData" [answers]="answers"></app-input-form>
+<app-coordinate *ngIf="showCoordinate" [answers]="answers" [answersNew]="answersNew"></app-coordinate>
 </mat-card>

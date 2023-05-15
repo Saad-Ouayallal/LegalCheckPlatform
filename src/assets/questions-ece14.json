@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Which type of belt Anchorage?",
+    "choices": [
+      {
+        "value": "Attached to the body of the seat cushion"
+      },
+      {
+        "value": "Attached to the X back of the seat"
+      },
+      {
+        "value": "Attached to the car body"
+      }
+    ]
+  },
+  {
+    "label": "Which seat type?",
+    "choices": [
+      {
+        "value": "Adjustable"
+      },
+      {
+        "value": "NonAdjustable"
+      }
+    ]
+  }
+]

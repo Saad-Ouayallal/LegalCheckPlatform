@@ -13,6 +13,7 @@ import { CardSelectionComponent } from './card-selection/card-selection.componen
 import { QuestionFormComponent } from './question-form/question-form.component';
 import { InputFormComponent } from './input-form/input-form.component';
 import { CommonModule } from '@angular/common';
+import { CoordinateComponent } from './coordinate/coordinate.component';
 
 
 const appRoutes: Routes = [
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
     CardSelectionComponent,
     QuestionFormComponent,
     InputFormComponent,
+    CoordinateComponent,
   ],
   imports: [
     CommonModule,
