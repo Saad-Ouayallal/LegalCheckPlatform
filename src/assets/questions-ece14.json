@@ -12,16 +12,5 @@
         "value": "Attached to the car body"
       }
     ]
-  },
-  {
-    "label": "Which seat type?",
-    "choices": [
-      {
-        "value": "Adjustable"
-      },
-      {
-        "value": "NonAdjustable"
-      }
-    ]
   }
 ]
