@@ -2,7 +2,7 @@
 
 <mat-card class="question-form-container">
   <mat-card-content>
-    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" *ngIf="!showResult">
       <div class="form-group">
         <label *ngFor="let type of jsonFormData?.types">
           <label *ngFor="let control of type.values">
@@ -11,7 +11,7 @@
                 <label class="name">{{ control.name }}</label>
                 <img src="{{control.description}}" alt="" class="imageDesign">
                 <div>
-                  <input [type]="control.type" [formControlName]="control.name" [value]="control.value" required>
+                  <input [type]="control.type" [formControlName]="control.name" [value]="control.value">
                   <div *ngIf="myForm.controls[control.name].hasError('max')" class="alert alert-danger">
                     Max required number is <strong>{{control.validators.max}}MM</strong>.
                   </div>
@@ -28,6 +28,58 @@
     </form>
 
   </mat-card-content>
+<div *ngIf="showResult && !this.myForm.valid" class="showresultForm">
+  <h2 class="titleForm">Form Report</h2>
+  <p style="color: red; font-size: 2rem; margin: 2rem"><strong>The Form is not Valid please check the Inputs below</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Report</th>
+      </tr>
+      <tr>
+        <th>Input</th>
+        <th>Problem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of formResult">
+        <td *ngIf="!result[1]" style="width: 70%;">{{result[0]}}</td>
+        <td *ngIf="!result[1]" class="alert alert-danger alert-result" >Missing Input</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <div>
+    <div *ngFor="let result of formResult">
+      <p *ngIf="!result[1]"> {{ result[0] }}</p>
+      <p *ngIf="!result[1]" class="alert alert-danger alert-result"> Missing Input</p>
+    </div>
+  </div> -->
 
+  <button mat-raised-button class="btn btn-success" color="primary" (click)="returnBack()">Return</button>
+
+</div>
+
+<div *ngIf="showResult && this.myForm.valid" class="showresultForm">
+  <h2 class="titleForm">Form Report:</h2>
+  <p style="color: green; font-size: 2rem; margin: 2rem"><strong>The Form is Valid and here's the report</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Report</th>
+      </tr>
+      <tr>
+        <th>Input</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of formResult">
+        <td style="width: 70%;">{{result[0]}}</td>
+        <td>{{result[1]}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button mat-raised-button class="btn btn-success" color="primary" (click)="returnBack()">Return</button>
+</div>
 
 </mat-card>

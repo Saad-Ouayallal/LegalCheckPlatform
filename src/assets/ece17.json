@@ -48,7 +48,6 @@
       "value":"",
       "type":"number",
       "validators" :{
-        "required": true,
         "max": 50
       }
     },
@@ -68,7 +67,6 @@
       "value":"",
       "type":"number",
       "validators" :{
-        "required": true,
         "max": 60,
         "min": 0
       }
@@ -90,7 +88,6 @@
       "value":"",
       "type":"number",
       "validators" :{
-        "required": true,
         "max": 45,
         "min": 0
       }

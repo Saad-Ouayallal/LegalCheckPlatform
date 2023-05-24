@@ -37,7 +37,8 @@ export class InputFormComponent implements OnChanges {
   jsonFormData!: JsonFormData;
 
   @Input() answers: any;
-
+  public showResult = false;
+  formResult: any;
   public myForm: FormGroup = this.fb.group({});
 
   constructor(private fb: FormBuilder) {}
@@ -76,12 +77,20 @@ export class InputFormComponent implements OnChanges {
   }
 
   onSubmit() {
+      this.showResult = true;
     if (this.myForm.valid) {
-      alert('This form is valid for the inputs you have entered')
+      this.formResult = this.myForm.value;
+      this.formResult = Object.entries(this.myForm.value);
+      console.log("form valid");
     } else {
-      alert('This Form is not valid, please check once again the measurments')
+      this.formResult = this.myForm.value;
+      this.formResult = Object.entries(this.myForm.value);
+      console.log('form not valid');
     }
-    console.log('Form valid: ', this.myForm.valid);
-    console.log('Form values: ', this.myForm.value);
+
+  }
+
+  returnBack() {
+    this.showResult = false;
   }
 }
